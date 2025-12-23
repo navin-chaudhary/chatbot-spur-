@@ -1,5 +1,5 @@
 // Use proxy in dev, or direct URL in production
-const API_BASE = 'http://localhost:3001';
+const API_BASE = 'https://chatbot-spur.onrender.com';
 
 export interface ChatMessage {
   message: string;
