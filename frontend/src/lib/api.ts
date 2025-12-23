@@ -1,5 +1,22 @@
-// Use proxy in dev, or direct URL in production
-const API_BASE = 'https://chatbot-spur.onrender.com';
+// Dynamic API base URL - uses environment variable or falls back to production/local
+// In development: uses VITE_API_URL or defaults to http://localhost:3001
+// In production: uses VITE_API_URL or defaults to production URL
+const getApiBase = (): string => {
+  // Check for explicit environment variable (highest priority)
+  if (import.meta.env.VITE_API_URL) {
+    return import.meta.env.VITE_API_URL;
+  }
+  
+  // In development mode, use local backend
+  if (import.meta.env.DEV) {
+    return 'http://localhost:3001';
+  }
+  
+  // In production, use production backend URL
+  return 'https://chatbot-spur.onrender.com';
+};
+
+const API_BASE = getApiBase();
 
 export interface ChatMessage {
   message: string;
