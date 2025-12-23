@@ -11,12 +11,6 @@ A full-stack AI-powered live chat application built with SvelteKit (frontend) an
 
 ## 🚀 Quick Start
 
-### Prerequisites
-
-- Node.js 20.x or higher
-- PostgreSQL database (local or cloud)
-- Groq API key ([Get one here](https://console.groq.com/))
-
 ### Step-by-Step Local Setup
 
 #### 1. Clone the Repository
@@ -577,20 +571,3 @@ npm run build
     - Conversation export (PDF, JSON)
     - Search functionality within chat history
 
----
-
-## 📝 License
-
-ISC
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
----
-
-## 📧 Support
-
-For issues or questions, please open an issue on the repository.
