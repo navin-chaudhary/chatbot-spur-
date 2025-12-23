@@ -9,7 +9,7 @@
     "sync": "svelte-kit sync"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^3.0.0",
+    "@sveltejs/adapter-vercel": "^5.0.0",
     "@sveltejs/kit": "^2.49.2",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "svelte": "^4.2.7",
@@ -19,6 +19,9 @@
   "dependencies": {
     "dompurify": "^3.3.1",
     "marked": "^11.2.0"
+  },
+  "engines": {
+    "node": "20.x"
   },
   "type": "module"
 }
